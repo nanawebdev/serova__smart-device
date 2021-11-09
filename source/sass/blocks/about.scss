@@ -1,0 +1,151 @@
+.about {
+  display: flex;
+  color: $dark-grey;
+  padding-top: 110px;
+  padding-bottom: 99px;
+  padding-right: 8px;
+}
+
+.about__title {
+  font-size: 36px;
+  line-height: 51px;
+  margin: 0;
+  font-family: "Roboto Condensed", monospace;
+}
+
+.about__text {
+  font-size: 16px;
+  line-height: 22px;
+  margin: 20px 0;
+}
+
+.about__button {
+  border: 1px solid $primary;
+  border-radius: 5px;
+  padding: 14px;
+  text-transform: uppercase;
+  color: $primary;
+  text-decoration: none;
+  margin-top: 20px;
+  display: inline-block;
+  padding: 13px 48px;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: $primary;
+    color: $basic-white;
+  }
+}
+
+.about.container {
+  max-width: 1164px;
+  margin: 0 auto;
+}
+
+.about__img {
+  margin-left: -3px;
+}
+
+.about__description {
+  margin-left: 53px;
+}
+
+.about__ellipsis {
+  display: none;
+}
+
+@media (max-width: 1919px) {
+  .about {
+    padding-left: 26px;
+    padding-right: 26px;
+  }
+}
+
+@media (max-width: $tablet) {
+  .about {
+    padding-top: 53px;
+    padding-bottom: 76px;
+  }
+
+  .about__img {
+    width: 251px;
+    height: 361px;
+  }
+
+  .about__description {
+    margin-left: 48px;
+  }
+
+  .about__title {
+    font-size: 32px;
+    line-height: 140.62%;
+    letter-spacing: 0.001em;
+    margin-bottom: 27px;
+  }
+
+  .about__text {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .about__text.about__text--clamped {
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .about__text--clamp .ellipsis {
+    display: inline-block;
+  }
+
+  .about__text--clamp .hide-text {
+    display: none;
+  }
+
+  .about__button {
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+  }
+}
+
+@media (max-width: $mobile) {
+  .about__img {
+    display: none;
+  }
+
+  .about__description {
+    margin: 0;
+  }
+
+  .about {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 52px;
+    padding-bottom: 66px;
+  }
+
+  .about__title {
+    font-size: 28px;
+    line-height: 140.62%;
+    margin-bottom: 21px;
+  }
+
+  .about__text {
+    margin-bottom: 39px;
+  }
+
+  .about__text--clamp {
+    margin-bottom: 29px;
+  }
+
+  .about__button {
+    margin: 0;
+  }
+}

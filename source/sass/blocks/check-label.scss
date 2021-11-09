@@ -1,0 +1,51 @@
+.check-label {
+  opacity: 0.8;
+  font-size: 14px;
+  line-height: 16px;
+  padding-top: 12px;
+
+  // Для кастомного чекбокса:
+  display: flex;
+  padding-left: 40px;
+  position: relative;
+  cursor: pointer;
+}
+
+.check-label__checkbox {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.check-label__checkmark {
+  position: absolute;
+  top: 12px;
+  left: 8px;
+  width: 16px;
+  height: 16px;
+  border: 1px solid $basic-white;
+}
+
+.check-label__checkmark::after {
+  left: 5px;
+  top: 2px;
+  width: 4px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 1px 1px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.check-label__checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.check-label__checkbox:checked ~ .check-label__checkmark:after {
+  display: block;
+}

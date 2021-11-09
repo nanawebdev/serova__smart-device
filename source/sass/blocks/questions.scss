@@ -1,0 +1,261 @@
+.questions__section {
+  width: 50%;
+  margin-left: auto;
+  padding-left: 15px;
+}
+
+.questions {
+  overflow: hidden;
+  min-height: 670px;
+  background-color: $primary;
+  color: $basic-white;
+}
+
+.questions__title {
+  font-size: 36px;
+  line-height: 51px;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 10px;
+  font-family: "Roboto Condensed", monospace;
+}
+
+.questions__text {
+  font-size: 16px;
+  line-height: 22px;
+  margin: 0;
+  margin-bottom: 53px;
+}
+
+.questions__form {
+  display: grid;
+  grid-template-columns: 270px 270px;
+  column-gap: 30px;
+  row-gap: 40px;
+}
+
+.questions__input {
+  color: $basic-white;
+  padding: 14px;
+  padding-left: 16px;
+  padding-bottom: 17px;
+  border: none;
+  background-color: rgba($basic-white, 0.1);
+
+  &::placeholder {
+    color: $basic-white;
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+.questions__input--name {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.questions__input--phone {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.questions__input--textarea {
+  grid-column: 1 / 3;
+  grid-row: 2 / 3;
+  padding-top: 10px;
+}
+
+.questions__button {
+  font-family: "Roboto Condensed", monospace;
+  border: 1px solid $basic-white;
+  border-radius: 5px;
+  background-color: transparent;
+  color: $basic-white;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+  padding: 14px 18px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+
+  &:hover {
+    background-color: rgba($basic-white, 0.3);
+  }
+}
+
+.questions .container {
+  display: flex;
+  position: relative;
+  padding-top: 90px;
+  padding-bottom: 105px;
+}
+
+.questions__plane {
+  position: absolute;
+  top: 83px;
+  left: -88px;
+  width: 706px;
+  height: 517px;
+  background-image: url("./../img/plane.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.questions__bg-items {
+  position: absolute;
+  right: -24%;
+  top: 91px;
+  width: 365px;
+  height: 527px;
+  background-image: url("./../img/questions-bg.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.questions .check-label {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+}
+
+@media (max-width: 1919px) {
+  .questions .check-label__checkmark {
+    top: 10px;
+    left: 10px;
+  }
+
+  .questions .check-label {
+    padding-top: 10px;
+    padding-left: 42px;
+  }
+
+  .questions__bg-items {
+    width: 20%;
+    right: -4%;
+  }
+
+  .questions__title {
+    font-size: 30px;
+    line-height: 140.62%;
+  }
+
+  .questions .container {
+    padding-left: 26px;
+    padding-right: 26px;
+  }
+
+  .questions__text {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .questions__plane {
+    left: 0;
+    width: 30%;
+  }
+
+  .questions__form {
+    flex-grow: 1;
+    grid-template-columns: 210px 210px;
+  }
+
+  .questions__section {
+    margin-left: 30%;
+  }
+}
+
+@media (max-width: $tablet) {
+  .questions__title {
+    font-size: 32px;
+    line-height: 140.62%;
+    margin-bottom: 17px;
+    margin-left: -3px;
+  }
+
+  .questions__text {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .questions__plane {
+    display: none;
+  }
+
+  .questions {
+    min-height: auto;
+  }
+
+  .questions__bg-items {
+    display: none;
+  }
+
+  .questions__section {
+    margin: 0;
+    width: 100%;
+    padding-left: 66px;
+    padding-right: 60px;
+  }
+
+  .questions__form {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .questions .container {
+    padding-top: 80px;
+  }
+
+  .questions__input {
+    padding-bottom: 20px;
+  }
+
+  .questions__input--textarea {
+    padding-bottom: 26px;
+    padding-top: 13px;
+  }
+}
+
+@media (max-width: $mobile) {
+  .questions__section {
+    padding: 0;
+  }
+
+  .questions__form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+  }
+
+  .questions__title {
+    font-size: 28px;
+    line-height: 140.62%;
+    margin-bottom: 12px;
+  }
+
+  .questions .container {
+    padding-top: 30px;
+    padding-bottom: 43px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .questions__text {
+    margin-bottom: 27px;
+  }
+
+  .questions__input--textarea {
+    height: 104px;
+  }
+
+  .questions .check-label {
+    padding-top: 0;
+    padding-left: 34px;
+  }
+
+  .questions .check-label__checkmark {
+    top: 0;
+    left: 0;
+  }
+}
