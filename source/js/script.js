@@ -26,7 +26,6 @@ function menuTogglerPages() {
 function openPopup() {
   popup.classList.add('js-popup--open');
   nameInput.focus();
-  overlay.style.display = 'block';
   var previousBodyWidth = document.body.clientWidth;
   document.body.style.overflow = 'hidden';
   var scrollWidth = document.body.clientWidth - previousBodyWidth;
@@ -35,7 +34,6 @@ function openPopup() {
 
 function closePopup() {
   popup.classList.remove('js-popup--open');
-  overlay.style.display = 'none';
   document.body.style.overflow = 'scroll';
 }
 
@@ -49,6 +47,8 @@ function setMask() {
 
 function onSubmitForm(e) {
   e.preventDefault();
+  var userPhone = phoneInput.nodeValue;
+  localStorage.setItem('phone', userPhone);
 }
 
 openPopupButton.addEventListener('click', openPopup);
