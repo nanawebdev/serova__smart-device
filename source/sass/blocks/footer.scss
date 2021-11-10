@@ -288,6 +288,11 @@
     border-bottom: none;
   }
 
+  .footer__lists {
+    padding-bottom: 26px;
+    border-bottom: 1px solid rgba($divider, 0.2);
+  }
+
   .footer__pages .footer__title,
   .footer__office .footer__title {
     margin-bottom: 0;

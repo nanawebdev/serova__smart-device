@@ -18,7 +18,7 @@
               <use xlink:href="./img/sprite.svg#logo"></use>
             </svg>
 
-            <svg class="svg header__logo--mobile" width="38" height="38">
+            <svg class="svg header__logo-mobile" width="38" height="38">
               <use xlink:href="./img/sprite.svg#logo-mobile"></use>
             </svg>
 
@@ -50,10 +50,10 @@
             <div class="promo__info">
               <h1 class="promo__title">Печатные платы</h1>
               <p class="promo__text">производство и монтаж, поставка комплектующих, блоков и модулей</p>
-              <button type="button" class="promo__button">
+              <a class="promo__button" href="#consult">
                 <span>Получить бесплатную консультацию</span>
                 <span>Бесплатная консультация</span>
-              </button>
+              </a>
             </div>
 
             <div class="promo__bg-img"></div>
@@ -105,7 +105,7 @@
         </ul>
 
         <div class="about container">
-          <img class="about__img" src="./img/2005.png" width="220" height="317" alt="2015">
+          <img class="about__img" src="./img/2005.png" width="220" height="317" alt="2015" loading="lazy">
 
           <div class="about__description">
             <h3 class="about__title">О компании</h3>
@@ -150,7 +150,7 @@
                     <!-- 720x256 без ретины; 1440x512 c ретиной  -->
                     <source media="(max-width: 1023px)" srcset="./img/printed-t.jpg 1x, ./img/printed-t@2x.jpg 2x">
                     <!-- 370x620 без ретины; 740х1240 c ретиной -->
-                    <img class="offer__img" src="./img/printed.jpg" srcset="./img/printed@2x.jpg 2x" alt="Печать плат" width="370" height="620">
+                    <img class="offer__img" src="./img/printed.jpg" srcset="./img/printed@2x.jpg 2x" alt="Печать плат" width="370" height="620" loading="lazy">
                   </picture>
                 </a>
               </li>
@@ -175,7 +175,7 @@
                     <!-- 720x256 без ретины; 1440x512 c ретиной  -->
                     <source media="(max-width: 1023px)" srcset="./img/mounting-t.jpg 1x, ./img/mounting-t@2x.jpg 2x">
                     <!-- 370x620 без ретины; 740х1240 c ретиной -->
-                    <img class="offer__img" width="370" height="620" src="./img/mounting.jpg" srcset="./img/mounting@2x.jpg 2x" alt="Печать плат">
+                    <img class="offer__img" width="370" height="620" src="./img/mounting.jpg" srcset="./img/mounting@2x.jpg 2x" alt="Монтаж плат" loading="lazy">
                   </picture>
                 </a>
               </li>
@@ -200,7 +200,7 @@
                     <!-- 720x256 без ретины; 1440x512 c ретиной  -->
                     <source media="(max-width: 1023px)" srcset="./img/light-t.jpg 1x, ./img/light-t@2x.jpg 2x">
                     <!-- 370x620 без ретины; 740х1240 c ретиной -->
-                    <img class="offer__img" width="370" height="620" src="./img/light.jpg" srcset="./img/light@2x.jpg 2x" alt="Печать плат">
+                    <img class="offer__img" width="370" height="620" src="./img/light.jpg" srcset="./img/light@2x.jpg 2x" alt="Комплектующие для светотехники" loading="lazy">
                   </picture>
                 </a>
               </li>
@@ -213,7 +213,7 @@
           <div class="container">
             <div class="questions__plane"></div>
 
-            <div class="questions__section">
+            <div class="questions__section" id="consult">
               <h3 class="questions__title">Остались вопросы? Задайте их нам!</h3>
               <p class="questions__text">Мы проконсультируем Вас бесплатно</p>
 
@@ -227,7 +227,7 @@
                 <label for="checkbox" class="check-label">
                   Я согласен на обработку персональных данных
                   <input type="checkbox" checked="" id="checkbox" class="check-label__checkbox">
-                  <div class="check-label__checkmark"></div>
+                  <span class="check-label__checkmark"></span>
                 </label>
 
 
@@ -396,8 +396,9 @@
 
   </div>
 
-  <div class="overlay"></div>
+
   <div class="popup-wrapper">
+    <div class="overlay"></div>
     <div class="popup">
       <h3 class="popup__title">Закажите звонок</h3>
       <p class="popup__text">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
@@ -406,17 +407,17 @@
           <use xlink:href="./img/sprite.svg#cross"></use>
         </svg>
       </button>
-      <!-- добавить action  -->
-      <form class="popup__form" action="#">
+
+      <form class="popup__form js-popup-form" action="#">
         <input type="text" placeholder="Имя" class="popup__input popup__input--name js-name-input" required="">
         <input type="tel" placeholder="Телефон" class="popup__input popup__input--phone js-phone-input" required="">
-        <textarea rows="7" placeholder="Ваш вопрос" class="popup__input popup__input--textarea" required=""></textarea>
-        <button type="submit" class="popup__button">Задать вопрос</button>
+        <textarea rows="7" placeholder="Ваш вопрос" class="popup__input popup__input--textarea js-message-input" required=""></textarea>
+        <button type="submit" class="popup__button js-submit-popup">Задать вопрос</button>
 
-        <label for="checkbox" class="check-label">
+        <label for="popup-checkbox" class="check-label">
           Я согласен на обработку персональных данных
-          <input type="checkbox" checked="" id="checkbox" class="check-label__checkbox">
-          <div class="check-label__checkmark"></div>
+          <input type="checkbox" checked="" id="popup-checkbox" class="check-label__checkbox" required="">
+          <span class="check-label__checkmark"></span>
         </label>
 
       </form>
