@@ -3,12 +3,17 @@
   font-size: 14px;
   line-height: 16px;
   padding-top: 12px;
+  transition: opacity 0.2s;
 
   // Для кастомного чекбокса:
   display: flex;
   padding-left: 40px;
   position: relative;
   cursor: pointer;
+
+  &:hover {
+    opacity: 1;
+  }
 }
 
 .check-label__checkbox {

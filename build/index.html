@@ -23,22 +23,21 @@
             </svg>
 
             <div class="header__right">
-              <ul class="header__contacts">
-                <li class="header__item">
-
-                  <a href="mailto:info@sd.ru" class="header__link">
+              <ul>
+                <li>
+                  <a href="mailto:info@sd.ru">
                     <svg class="svg svg--mail" width="18" height="18">
                       <use xlink:href="./img/sprite.svg#mail"></use>
                     </svg>
-                    <span class="header__contact header__contact--mail">info@sd.ru</span>
+                    <span>info@sd.ru</span>
                   </a>
                 </li>
-                <li class="header__item">
-                  <a href="tel:+74950005252" class="header__link">
+                <li>
+                  <a href="tel:+74950005252">
                     <svg class="svg svg--phone" width="18" height="18">
                       <use xlink:href="./img/sprite.svg#phone-call"></use>
                     </svg>
-                    <span class="header__contact">+7 (495) 000 52 52</span>
+                    <span>+7 (495) 000 52 52</span>
                   </a>
                 </li>
               </ul>
@@ -48,20 +47,16 @@
 
           <div class="promo">
             <div class="promo__info">
-              <h1 class="promo__title">Печатные платы</h1>
-              <p class="promo__text">производство и монтаж, поставка комплектующих, блоков и модулей</p>
+              <h1>Печатные платы</h1>
+              <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
               <a class="promo__button" href="#consult">
                 <span>Получить бесплатную консультацию</span>
                 <span>Бесплатная консультация</span>
               </a>
             </div>
-
             <div class="promo__bg-img"></div>
-
           </div>
         </div>
-
-
       </header>
       <main>
 
@@ -108,17 +103,21 @@
           <img class="about__img" src="./img/2005.png" width="220" height="317" alt="2015" loading="lazy">
 
           <div class="about__description">
-            <h3 class="about__title">О компании</h3>
-            <p class="about__text">Мы поставляем электронные комплектующие, производим печатные платы и предоставляем
+            <h3>О компании</h3>
+            <p>Мы поставляем электронные комплектующие, производим печатные платы и предоставляем
               мировые технологии с 1997
               года. Выполняем срочные заказы и пилотные образцы до 10 дней.
             </p>
-            <p class="about__text about__text--clamp">Наши поставщики - мировые производители электронных компонентов:
-              OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные
-              платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог<span class="ellipsis">..</span><span class="hide-text">(РЖД), РоссАвтоПрома
-                (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники
-                России.</span>
-            </p>
+            <div class="text-clamp">
+              <p>Наши поставщики - мировые производители электронных компонентов:
+                OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные
+                платы и комплектующие Service Devices применяются на предприятиях Российских Железных
+                Дорог<span>..</span>
+                <span>(РЖД), РоссАвтоПрома
+                  (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники
+                  России.</span>
+              </p>
+            </div>
 
             <a href="#" class="about__button">Подробнее</a>
           </div>
@@ -128,15 +127,18 @@
         <div class="offer">
           <div class="container">
             <h2 class="offer__title">Service Device предлагает следующие товары и услуги</h2>
-            <ul class="offer__list">
-              <li class="offer__item">
-                <a href="#" class="offer__link">
-                  <p class="offer__service">Производство печатных плат</p>
+
+            <ul>
+              <li>
+                <a href="#">
+                  <p>Производство печатных плат</p>
+
                   <div class="offer__pseudo-button">
                     <svg class="svg svg-arrow" width="8" height="4">
                       <use xlink:href="./img/sprite.svg#arrow"></use>
                     </svg>
                   </div>
+
                   <picture>
                     <!-- 290x256  без ретины; 580x512 c ретиной  -->
                     <source media="(max-width: 767px)" srcset="./img/printed-m.webp 1x, ./img/printed-m@2x.webp 2x">
@@ -154,14 +156,16 @@
                   </picture>
                 </a>
               </li>
-              <li class="offer__item">
-                <a href="#" class="offer__link">
-                  <p class="offer__service">Монтаж печатных плат</p>
+              <li>
+                <a href="#">
+                  <p>Монтаж печатных плат</p>
+
                   <div class="offer__pseudo-button">
                     <svg class="svg svg-arrow" width="8" height="4">
                       <use xlink:href="./img/sprite.svg#arrow"></use>
                     </svg>
                   </div>
+
                   <picture>
                     <!-- 290x256  без ретины; 580x512 c ретиной  -->
                     <source media="(max-width: 767px)" srcset="./img/mounting-m.webp 1x, ./img/mounting-m@2x.webp 2x">
@@ -179,9 +183,11 @@
                   </picture>
                 </a>
               </li>
-              <li class="offer__item offer__item--light">
-                <a href="#" class="offer__link">
-                  <p class="offer__service">Комплектующие для cветотехники</p>
+
+              <li>
+                <a href="#">
+                  <p>Комплектующие для cветотехники</p>
+
                   <div class="offer__pseudo-button">
                     <svg class="svg svg-arrow" width="8" height="4">
                       <use xlink:href="./img/sprite.svg#arrow"></use>
@@ -206,25 +212,27 @@
               </li>
             </ul>
           </div>
-
         </div>
 
         <div class="questions">
           <div class="container">
             <div class="questions__plane"></div>
-
             <div class="questions__section" id="consult">
-              <h3 class="questions__title">Остались вопросы? Задайте их нам!</h3>
-              <p class="questions__text">Мы проконсультируем Вас бесплатно</p>
+              <h3>Остались вопросы? Задайте их нам!</h3>
+              <p>Мы проконсультируем Вас бесплатно</p>
 
-              <!-- добавить action  -->
-              <form class="questions__form" action="#">
-                <input type="text" placeholder="Имя" class="questions__input questions__input--name" required="">
-                <input type="tel" placeholder="Телефон" class="questions__input questions__input--phone" required="">
-                <textarea rows="7" placeholder="Ваш вопрос" class="questions__input questions__input--textarea" required=""></textarea>
+              <form action="#">
+                <label class="visually-hidden" for="questions-input-name">Ваше имя </label>
+                <input type="text" id="questions-input-name" placeholder="Имя" required="" minlength="1" maxlength="50">
+
+                <label class="visually-hidden" for="questions-input-tel">Ваше номер телефона</label>
+                <input type="tel" id="questions-input-tel" placeholder="Телефон" min="10" required="">
+
+                <label class="visually-hidden" for="questions-input-message">Ваше вопрос</label>
+                <textarea rows="7" id="questions-input-message" placeholder="Ваш вопрос" minlength="1" maxlength="1000" required=""></textarea>
                 <button type="submit" class="questions__button">Задать вопрос</button>
 
-                <label for="checkbox" class="check-label">
+                <label for="checkbox" class="check-label" tabindex="0">
                   Я согласен на обработку персональных данных
                   <input type="checkbox" checked="" id="checkbox" class="check-label__checkbox">
                   <span class="check-label__checkmark"></span>
@@ -233,16 +241,12 @@
 
               </form>
             </div>
-
             <div class="questions__bg-items"></div>
-
           </div>
         </div>
 
-
       </main>
     </div>
-
 
     <footer class="footer">
       <div class="container">
@@ -252,28 +256,28 @@
             <use xlink:href="./img/sprite.svg#logo-dark"></use>
           </svg>
 
-          <a class="footer__link footer__link--sd">
+          <a href="#" class="link-sd">
             1999-2018 SD Service Devices
           </a>
 
-          <ul class="footer__socials">
-            <li class="footer__social">
+          <ul>
+            <li>
               <a href="#">
-                <svg class="svg" width="27" height="27">
+                <svg class="svg svg-social" width="27" height="27">
                   <use xlink:href="./img/sprite.svg#facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer__social">
+            <li>
               <a href="#">
-                <svg class="svg" width="27" height="27">
+                <svg class="svg svg-social" width="27" height="27">
                   <use xlink:href="./img/sprite.svg#ok"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer__social">
+            <li>
               <a href="#">
-                <svg class="svg" width="27" height="27">
+                <svg class="svg svg-social" width="27" height="27">
                   <use xlink:href="./img/sprite.svg#vk"></use>
                 </svg>
               </a>
@@ -294,40 +298,40 @@
             <div class="footer__lists">
               <ul class="footer__list">
                 <li>
-                  <a href="#" class="footer__link">
+                  <a href="#">
                     О компании
                   </a>
                 </li>
                 <li>
-                  <a href="#" class="footer__link">
+                  <a href="#">
                     Продукты
                   </a>
                 </li>
                 <li>
-                  <a href="#" class="footer__link">
+                  <a href="#">
                     Производство печатных плат
                   </a>
                 </li>
                 <li>
-                  <a href="#" class="footer__link">
+                  <a href="#">
                     Монтаж печатных плат
                   </a>
                 </li>
               </ul>
 
-              <ul class="footer__list">
+              <ul>
                 <li>
-                  <a href="#" class="footer__link">
+                  <a href="#">
                     Комплектующие
                   </a>
                 </li>
                 <li>
-                  <a href="#" class="footer__link">
+                  <a href="#">
                     Доставка
                   </a>
                 </li>
                 <li>
-                  <a href="#" class="footer__link">
+                  <a href="#">
                     Контакты
                   </a>
                 </li>
@@ -343,25 +347,25 @@
               <span class="footer__button"></span>
             </div>
 
-            <ul class="footer__list footer__list--office">
+            <ul>
               <li>
-                <a href="#" class="footer__link">
-                г. Мытищи, Олимпийский проспект, д.10
+                <a href="#">
+                  г. Мытищи, Олимпийский проспект, д.10
                 </a>
               </li>
               <li>
-                <a href="tel:+74955894050" class="footer__link">
-                +7 (495) 589-40-50
+                <a href="tel:+74955894050">
+                  +7 (495) 589-40-50
                 </a>
               </li>
               <li>
-                <a href="tel:+79250038767" class="footer__link">
-                +7 (925) 003-87-67
+                <a href="tel:+79250038767">
+                  +7 (925) 003-87-67
                 </a>
               </li>
               <li>
-                <a href="tel:+792692608079" class="footer__link">
-                +7 (926) 926-080-79
+                <a href="tel:+792692608079">
+                  +7 (926) 926-080-79
                 </a>
               </li>
             </ul>
@@ -386,7 +390,7 @@
           </a>
         </div>
 
-        <a class="footer__link footer__link--developed">
+        <a href="#" class="link-developed">
           Developed by wow studio
         </a>
 
@@ -400,23 +404,31 @@
   <div class="popup-wrapper">
     <div class="overlay"></div>
     <div class="popup">
-      <h3 class="popup__title">Закажите звонок</h3>
-      <p class="popup__text">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+      <h3>Закажите звонок</h3>
+      <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+
       <button type="button" class="js-close-popup popup__cross">
         <svg class="svg svg-cross" width="16" height="16">
           <use xlink:href="./img/sprite.svg#cross"></use>
         </svg>
       </button>
 
-      <form class="popup__form js-popup-form" action="#">
-        <input type="text" placeholder="Имя" class="popup__input popup__input--name js-name-input" required="">
-        <input type="tel" placeholder="Телефон" class="popup__input popup__input--phone js-phone-input" required="">
-        <textarea rows="7" placeholder="Ваш вопрос" class="popup__input popup__input--textarea js-message-input" required=""></textarea>
+      <form class="js-popup-form" action="#">
+
+        <label class="visually-hidden" for="popup-input-name">Ваше имя </label>
+        <input type="text" id="popup-input-name" placeholder="Имя" class="popup__input popup__input--name js-name-input" required="" maxlength="100" minlength="1">
+
+        <label class="visually-hidden" for="popup-input-tel">Ваше номер телефона</label>
+        <input type="tel" id="popup-input-tel" placeholder="Телефон" class="js-phone-input" required="" min="10">
+
+        <label class="visually-hidden" for="popup-input-message">Ваше вопрос</label>
+        <textarea rows="7" id="popup-input-message" placeholder="Ваш вопрос" minLength="1" maxlength="1000" class="js-message-input" required=""></textarea>
+
         <button type="submit" class="popup__button js-submit-popup">Задать вопрос</button>
 
         <label for="popup-checkbox" class="check-label">
           Я согласен на обработку персональных данных
-          <input type="checkbox" checked="" id="popup-checkbox" class="check-label__checkbox" required="">
+          <input type="checkbox" checked="" id="popup-checkbox" class="check-label__checkbox" required="" tabindex="0">
           <span class="check-label__checkmark"></span>
         </label>
 
@@ -424,8 +436,14 @@
     </div>
   </div>
 
-
   <script src="./js/script.js"></script>
+  <script src="./js/jquery-3.6.0.min.js"></script>
+  <script src="./js/jquery.mask.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("[type=tel]").mask("+7 (000) 000-0000");
+    });
+  </script>
 </body>
 
 </html>

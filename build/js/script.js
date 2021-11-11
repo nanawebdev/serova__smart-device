@@ -32,7 +32,7 @@ function openPopup() {
   var scrollWidth = document.body.clientWidth - previousBodyWidth;
   document.body.style.marginRight = document.body.clientWidth + scrollWidth;
 
-  document.onkeydown = function(e) {
+  document.onkeydown = function (e) {
     if (e.key === 'Escape') {
       closePopup();
     }
@@ -44,45 +44,11 @@ function closePopup() {
   document.body.style.overflow = 'scroll';
 }
 
-// function validation(value) {
-
-// }
-
-// function setMask(value) {
-
-//   function createMask(value) {
-//     var matrix = '+7 (___)_______';
-//     var i = 0;
-
-//     // возьми все не цифры и замени пустым местом. вернется 7
-//     var def = matrix.replace(/\D/g, '');
-//     var val = value.replace(/\D/g, '');
-
-//     if (def.length >= val.length) {
-//       val = def;
-//     }
-
-//     value = matrix.replace(/./g, function (a) {
-//       if (/[_\d]/.test(a) && i < val.length) {
-//         val.charAt(i++);
-
-//         if (i >= val.length) {
-//           return '';
-//         }
-//         return a;
-//       }
-//       // return /[_\d]/.test(a) && i < val.length ? val.charAt(i++) : i >= val.length ? '' : a;
-//     });
-//   }
-
-// }
-
 function onSubmitForm(e) {
   e.preventDefault();
   var userPhone = phoneInput.value;
   var userName = nameInput.value;
   var userMessage = messageInput.value;
-  // validation(userPhone);
 
   localStorage.setItem('phone', userPhone);
   localStorage.setItem('name', userName);
@@ -95,8 +61,4 @@ openPopupButton.addEventListener('click', openPopup);
 closePopupButton.addEventListener('click', closePopup);
 pages.addEventListener('click', menuTogglerPages);
 office.addEventListener('click', menuTogglerOffice);
-// phoneInput.addEventListener('change', setMask(phoneInput.target.value));
-// phoneInput.addEventListener('click', setMask);
 overlay.addEventListener('click', closePopup);
-
-

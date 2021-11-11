@@ -6,7 +6,7 @@
   padding: 0;
 }
 
-.promo__title {
+.promo__info h1 {
   color: $basic-white;
   font-weight: 700;
   font-size: 40px;
@@ -14,7 +14,7 @@
   letter-spacing: 0.07em;
   text-transform: uppercase;
   font-family: "Roboto Condensed", monospace;
-  margin-top: 231px;
+  margin-top: 230px;
   white-space: normal;
   word-wrap: break-word;
   margin-bottom: 0;
@@ -22,7 +22,7 @@
   font-size: 80px;
 }
 
-.promo__text {
+.promo__info p {
   font-weight: 400;
   font-size: 22px;
   line-height: 34px;
@@ -30,11 +30,11 @@
   display: flex;
   padding-left: 94px;
   position: relative;
-  margin-top: 26px;
+  margin-top: 27px;
   margin-bottom: 44px;
 }
 
-.promo__text::before {
+.promo__info p::before {
   position: absolute;
   content: "";
   top: 17px;
@@ -63,6 +63,8 @@
   cursor: pointer;
   transition: background-color 0.2s;
   text-decoration: none;
+  display: block;
+  max-width: 407px;
 
   &:hover {
     background-color: rgba($primary, 0.5);
@@ -128,24 +130,24 @@
     padding-left: 92px;
   }
 
-  .promo__title {
+  .promo__info h1 {
     font-size: 60px;
     line-height: 70px;
     letter-spacing: 0.07em;
-    margin-top: 117px;
+    margin-top: 116px;
   }
 
-  .promo__text::before {
+  .promo__info p::before {
     width: 32px;
     top: 16px;
   }
 
-  .promo__text {
+  .promo__info p {
     padding-left: 47px;
     font-size: 18px;
     line-height: 156.8%;
     margin-bottom: 55px;
-    margin-top: 28px;
+    margin-top: 29px;
   }
 
   .promo__button {
@@ -162,7 +164,7 @@
     background-image: url("./../../img/promo-img-m.png");
   }
 
-  .promo__title {
+  .promo__info h1 {
     font-size: 40px;
     line-height: 47px;
     letter-spacing: 0.07em;
@@ -180,11 +182,15 @@
     padding-right: 16px;
   }
 
-  .promo__text {
-    margin-top: 26px;
+  .promo__info p {
+    margin-top: 28px;
     font-size: 16px;
     line-height: 156.8%;
-    margin-bottom: 44px;
+    margin-bottom: 42px;
+  }
+
+  .promo__info p::before {
+    top: 14px;
   }
 
   .promo__button {
