@@ -41,7 +41,7 @@
                   </a>
                 </li>
               </ul>
-              <button type="button" class="header__button js-open-popup">Заказать звонок</button>
+              <button type="button" class="js-open-popup">Заказать звонок</button>
             </div>
           </div>
 
@@ -49,7 +49,7 @@
             <div class="promo__info">
               <h1>Печатные платы</h1>
               <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
-              <a class="promo__button" href="#consult">
+              <a href="#consult">
                 <span>Получить бесплатную консультацию</span>
                 <span>Бесплатная консультация</span>
               </a>
@@ -119,7 +119,7 @@
               </p>
             </div>
 
-            <a href="#" class="about__button">Подробнее</a>
+            <a href="#">Подробнее</a>
           </div>
 
         </div>
@@ -234,7 +234,7 @@
                 <label class="visually-hidden" for="questions-input-message">Ваше вопрос</label>
                 <textarea rows="7" id="questions-input-message" placeholder="Ваш вопрос" minlength="1" maxlength="1000"
                   required></textarea>
-                <button type="submit" class="questions__button">Задать вопрос</button>
+                <button type="submit">Задать вопрос</button>
 
                 <label for="checkbox" class="check-label" tabindex="0">
                   Я согласен на обработку персональных данных
@@ -411,7 +411,7 @@
       <h3>Закажите звонок</h3>
       <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
 
-      <button type="button" class="js-close-popup popup__cross">
+      <button type="button" class="js-close-popup">
         <svg class="svg svg-cross" width="16" height="16">
           <use xlink:href="./img/sprite.svg#cross"></use>
         </svg>
@@ -428,10 +428,10 @@
           class="js-phone-input" required minlength="10">
 
         <label class="visually-hidden" for="popup-input-message">Ваше вопрос</label>
-        <textarea rows="7" id="popup-input-message" placeholder="Ваш вопрос" minLength="1" maxlength="1000"
+        <textarea rows="7" id="popup-input-message" placeholder="Ваш вопрос" minlength="1" maxlength="1000"
           class="js-message-input" required></textarea>
 
-        <button type="submit" class="popup__button js-submit-popup">Задать вопрос</button>
+        <button type="submit" class="js-submit-popup">Задать вопрос</button>
 
         <label for="popup-checkbox" class="check-label">
           Я согласен на обработку персональных данных
@@ -443,14 +443,8 @@
     </div>
   </div>
 
-  <script src="./js/script.js"></script>
-  <script src="./js/jquery-3.6.0.min.js"></script>
-  <script src="./js/jquery.mask.min.js"></script>
-  <script>
-    $(document).ready(function () {
-      $("[type=tel]").mask("+7 (000) 000-0000");
-    });
-  </script>
+  <script src="./js/vendor.js"></script>
+  <script src="./js/main.js"></script>
 </body>
 
 </html>

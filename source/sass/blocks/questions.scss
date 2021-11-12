@@ -18,7 +18,7 @@
   font-weight: 400;
   margin: 0;
   margin-bottom: 10px;
-  font-family: "Roboto Condensed", monospace;
+  font-family: "Roboto Condensed", "Courier New" , monospace;
 }
 
 
@@ -72,8 +72,8 @@
   padding-top: 10px;
 }
 
-.questions__button {
-  font-family: "Roboto Condensed", monospace;
+.questions button {
+  font-family: "Roboto Condensed", "Courier New" , monospace;
   border: 1px solid $basic-white;
   border-radius: 5px;
   background-color: transparent;

@@ -82,4 +82,5 @@
     overlay.addEventListener('click', closePopup);
   }
 
+  window.jQuery('[type=tel]').mask('+7 (000) 000-0000');
 })();

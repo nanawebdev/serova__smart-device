@@ -2,24 +2,24 @@
   font-family: "PT Mono";
   font-weight: 400;
   font-style: normal;
-  src: url("./../fonts/pt-mono-regular.woff"),
-  url("./../fonts/pt-mono-regular.woff2");
+  src: url("./../fonts/pt-mono-regular.woff") format("woff"),
+  url("./../fonts/pt-mono-regular.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "Roboto Condensed";
   font-weight: 400;
   font-style: normal;
-  src: url("./../fonts/roboto-condensed-regular.woff"),
-  url("./../fonts/roboto-condensed-regular.woff2"),
+  src: url("./../fonts/roboto-condensed-regular.woff") format("woff"),
+  url("./../fonts/roboto-condensed-regular.woff2") format("woff2"),
 }
 
 @font-face {
   font-family: "Roboto Condensed";
   font-weight: 700;
   font-style: normal;
-  src: url("./../fonts/roboto-condensed-bold.woff"),
-  url("./../fonts/roboto-condensed-bold.woff2"),
+  src: url("./../fonts/roboto-condensed-bold.woff") format("woff"),
+  url("./../fonts/roboto-condensed-bold.woff2") format("woff2"),
 }
 
 .container {
@@ -28,7 +28,7 @@
 }
 
 body {
-  font-family: "PT Mono", monospace;
+  font-family: "PT Mono", "Courier New" ,monospace;
   font-size: 16px;
   font-weight: 400;
   margin: 0;

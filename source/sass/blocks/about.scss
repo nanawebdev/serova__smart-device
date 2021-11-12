@@ -10,7 +10,7 @@
   font-size: 36px;
   line-height: 51px;
   margin: 0;
-  font-family: "Roboto Condensed", monospace;
+  font-family: "Roboto Condensed", "Courier New" , monospace;
 }
 
 .about__description p {
@@ -19,7 +19,8 @@
   margin: 20px 0;
 }
 
-.about__button {
+.about a {
+  vertical-align: baseline;
   border: 1px solid $primary;
   border-radius: 5px;
   padding: 14px;
@@ -42,12 +43,8 @@
 }
 
 .about.container {
-  max-width: 1164px;
+  max-width: 1168px;
   margin: 0 auto;
-}
-
-.about__img {
-  margin-left: -3px;
 }
 
 .about__description {
@@ -97,13 +94,14 @@
 
   .text-clamp span:nth-of-type(1) {
     display: inline-block;
+    vertical-align: baseline;
   }
 
   .text-clamp span:nth-of-type(2) {
     display: none;
   }
 
-  .about__button {
+  .about a {
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.05em;
@@ -150,7 +148,7 @@
     margin-bottom: 0;
   }
 
-  .about__button {
+  .about a {
     margin: 0;
   }
 }

@@ -13,7 +13,7 @@
   line-height: 94px;
   letter-spacing: 0.07em;
   text-transform: uppercase;
-  font-family: "Roboto Condensed", monospace;
+  font-family: "Roboto Condensed", "Courier New" , monospace;
   margin-top: 230px;
   white-space: normal;
   word-wrap: break-word;
@@ -44,8 +44,8 @@
   background-color: $basic-white;
 }
 
-.promo__button {
-  font-family: "Roboto Condensed", monospace;
+.promo a {
+  font-family: "Roboto Condensed", "Courier New" , monospace;
   background-color: $primary;
   color: $basic-white;
   font-weight: bold;
@@ -87,7 +87,7 @@
   z-index: 1;
 }
 
-.promo__button span:nth-child(2) {
+.promo a span:nth-child(2n) {
   display: none;
 }
 
@@ -150,7 +150,7 @@
     margin-top: 29px;
   }
 
-  .promo__button {
+  .promo a {
     margin-left: 0;
     margin-left: 47px;
     padding: 18px 31px;
@@ -193,15 +193,15 @@
     top: 14px;
   }
 
-  .promo__button {
+  .promo a {
     margin-left: 0;
   }
 
-  .promo__button span:nth-child(1) {
+  .promo a span:nth-child(1n) {
     display: none;
   }
 
-  .promo__button span:nth-child(2) {
+  .promo a span:nth-child(2n) {
     display: block;
   }
 
