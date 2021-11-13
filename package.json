@@ -21,13 +21,15 @@
     "gulp-webp": "^4.0.1",
     "modern-normalize": "^1.1.0",
     "pixel-glass": "^1.0.13",
+    "postcss": "^8.3.11",
+    "postcss-scss": "^4.0.2",
     "posthtml-include": "^1.2.0",
     "stylelint": "^14.0.1",
     "stylelint-config-htmlacademy": "0.1.x"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
-    "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
+    "stylelint": "stylelint \"source/sass/**/*.scss\"",
     "test": "npm run editorconfig && npm run stylelint && eslint source/js/",
     "build": "gulp build",
     "start": "gulp start",
