@@ -20,7 +20,6 @@
 }
 
 .about a {
-  vertical-align: baseline;
   border: 1px solid $primary;
   border-radius: 5px;
   padding: 14px;
@@ -29,6 +28,7 @@
   text-decoration: none;
   margin-top: 20px;
   display: inline-block;
+  vertical-align: baseline;
   padding: 13px 48px;
   font-size: 14px;
   line-height: 16px;
@@ -51,7 +51,7 @@
   margin-left: 53px;
 }
 
-.text-clamp span:nth-of-type(1) {
+.text-clamp span:nth-of-type(1n) {
   display: none;
 }
 
@@ -92,12 +92,12 @@
     margin-left: 3px;
   }
 
-  .text-clamp span:nth-of-type(1) {
+  .text-clamp span:nth-of-type(1n) {
     display: inline-block;
     vertical-align: baseline;
   }
 
-  .text-clamp span:nth-of-type(2) {
+  .text-clamp span:nth-of-type(2n) {
     display: none;
   }
 
