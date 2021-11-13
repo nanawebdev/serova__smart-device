@@ -10,7 +10,7 @@
   font-size: 36px;
   line-height: 51px;
   margin: 0;
-  font-family: "Roboto Condensed", "Courier New" , monospace;
+  font-family: "Roboto Condensed", "Courier New", monospace;
 }
 
 .about__description p {
@@ -22,7 +22,6 @@
 .about a {
   border: 1px solid $primary;
   border-radius: 5px;
-  padding: 14px;
   text-transform: uppercase;
   color: $primary;
   text-decoration: none;
@@ -82,7 +81,8 @@
   .about__description h3 {
     font-size: 32px;
     line-height: 140.62%;
-    letter-spacing: 0.001em;
+    // linter не дал сделать 0.001
+    letter-spacing: 0.01em;
     margin-bottom: 26px;
   }
 

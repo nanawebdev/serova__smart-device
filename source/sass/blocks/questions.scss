@@ -18,7 +18,7 @@
   font-weight: 400;
   margin: 0;
   margin-bottom: 10px;
-  font-family: "Roboto Condensed", "Courier New" , monospace;
+  font-family: "Roboto Condensed", "Courier New", monospace;
 }
 
 
@@ -36,8 +36,8 @@
   row-gap: 40px;
 }
 
-  .questions__section input,
-  .questions__section textarea {
+.questions__section input,
+.questions__section textarea {
   color: $dark-primary;
   padding: 14px;
   padding-left: 16px;
@@ -50,10 +50,6 @@
     font-size: 16px;
     line-height: 22px;
   }
-}
-
-.questions__section textarea {
-  padding-top: 12px;
 }
 
 .questions input[type="text"] {
@@ -73,7 +69,7 @@
 }
 
 .questions button {
-  font-family: "Roboto Condensed", "Courier New" , monospace;
+  font-family: "Roboto Condensed", "Courier New", monospace;
   border: 1px solid $basic-white;
   border-radius: 5px;
   background-color: transparent;
@@ -145,7 +141,7 @@
     right: -4%;
   }
 
-  .questions__section h3  {
+  .questions__section h3 {
     font-size: 30px;
     line-height: 140.62%;
   }
@@ -176,7 +172,7 @@
 }
 
 @media (max-width: $tablet) {
-  .questions__section h3  {
+  .questions__section h3 {
     font-size: 32px;
     line-height: 140.62%;
     margin-bottom: 17px;
@@ -240,7 +236,7 @@
     row-gap: 30px;
   }
 
-  .questions__section h3  {
+  .questions__section h3 {
     font-size: 28px;
     line-height: 140.62%;
     margin-bottom: 12px;

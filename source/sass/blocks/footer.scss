@@ -32,6 +32,7 @@
 .svg-social {
 
   fill: $middle-grey;
+
   &:hover {
     fill: rgba($middle-grey, 0.7);
   }
@@ -87,7 +88,7 @@
   font-weight: 400;
   margin: 0;
   margin-bottom: 10px;
-  font-family: "Roboto Condensed", "Courier New" , monospace;
+  font-family: "Roboto Condensed", "Courier New", monospace;
 }
 
 .footer__bottom .footer__special-link,
@@ -205,7 +206,7 @@
     letter-spacing: 0.04em;
     font-size: 13px;
     line-height: 24px;
-    font-family: "PT Mono", "Courier New" , monospace;
+    font-family: "PT Mono", "Courier New", monospace;
     display: block;
     text-decoration: none;
     color: rgba($dark-primary, 0.5);

@@ -32,23 +32,18 @@
 }
 
 .check-label__checkmark::after {
+  content: "";
+  position: absolute;
   left: 5px;
   top: 2px;
   width: 4px;
   height: 8px;
-  border: solid white;
+  border: solid $basic-white;
   border-width: 0 1px 1px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
-}
-
-.check-label__checkmark:after {
-  content: "";
-  position: absolute;
   display: none;
 }
 
-.check-label__checkbox:checked ~ .check-label__checkmark:after {
+.check-label__checkbox:checked ~ .check-label__checkmark::after {
   display: block;
 }
