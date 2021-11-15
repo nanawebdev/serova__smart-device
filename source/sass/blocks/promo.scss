@@ -1,9 +1,9 @@
 .promo {
   display: flex;
   min-height: 793px;
+  padding: 0;
   padding-bottom: 16px;
   position: relative;
-  padding: 0;
 }
 
 .promo__info h1 {
@@ -103,6 +103,7 @@
 
   .promo {
     padding: 0 8px;
+    padding-bottom: 8px;
   }
 }
 
@@ -110,13 +111,14 @@
   .promo__bg-img {
     width: 330px;
     height: 466px;
-    background-image: url("./../../img/promo-img-t.png");
+    background-image: url("./../img/promo-img-t.png");
   }
 
   .promo {
     width: 100%;
     min-height: 614px;
     padding: 0;
+    padding-bottom: 8px;
     overflow: hidden;
   }
 
@@ -161,7 +163,7 @@
   .promo__bg-img {
     width: 294px;
     height: 437px;
-    background-image: url("./../../img/promo-img-m.png");
+    background-image: url("./../img/promo-img-m.png");
   }
 
   .promo__info h1 {

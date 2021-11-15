@@ -52,3 +52,12 @@
 .check-label__checkbox:checked ~ .check-label__checkmark:after {
   display: block;
 }
+
+.check-label:focus {
+  border: none;
+  outline: none;
+}
+
+.check-label:focus .check-label__checkmark {
+  outline: 2px solid $focus;
+}

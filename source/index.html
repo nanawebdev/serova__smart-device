@@ -218,27 +218,31 @@
         </div>
 
         <div class="questions">
+          <div class="questions__result js-questions-result">
+            <p>Ваш вопрос успешно отправлен</p>
+          </div>
           <div class="container">
             <div class="questions__plane"></div>
             <div class="questions__section" id="consult">
               <h3>Остались вопросы? Задайте их нам!</h3>
               <p>Мы проконсультируем Вас бесплатно</p>
 
-              <form action="#">
+
+              <form action="#" class="js-questions-form">
                 <label class="visually-hidden" for="questions-input-name">Ваше имя </label>
-                <input type="text" id="questions-input-name" placeholder="Имя" required minlength="1" maxlength="50">
+                <input type="text" id="questions-input-name" placeholder="Имя" required minlength="1" maxlength="50" class="js-name-input">
 
                 <label class="visually-hidden" for="questions-input-tel">Ваше номер телефона</label>
-                <input type="tel" id="questions-input-tel" placeholder="Телефон" minlength="10" required>
+                <input type="tel" id="questions-input-tel" placeholder="Телефон" minlength="10" required class="js-phone-input">
 
                 <label class="visually-hidden" for="questions-input-message">Ваше вопрос</label>
                 <textarea rows="7" id="questions-input-message" placeholder="Ваш вопрос" minlength="1" maxlength="1000"
-                  required></textarea>
+                  required class="js-message-input"></textarea>
                 <button type="submit">Задать вопрос</button>
 
                 <label for="checkbox" class="check-label" tabindex="0">
                   Я согласен на обработку персональных данных
-                  <input type="checkbox" checked id="checkbox" class="check-label__checkbox">
+                  <input type="checkbox" checked id="checkbox" class="check-label__checkbox js-checkbox-input">
                   <span class="check-label__checkmark"></span>
                 </label>
 
@@ -294,9 +298,9 @@
 
           <div class="footer__pages js-pages">
 
-            <div class="footer__title footer__title--border">
+            <div class="footer__title footer__title--border footer__clickable-title js-open-pages">
               <span>Разделы сайта</span>
-              <span class="footer__button"></span>
+              <button></button>
             </div>
 
             <div class="footer__lists">
@@ -346,9 +350,9 @@
 
           <div class="footer__office js-office">
 
-            <div class="footer__title">
+            <div class="footer__title footer__clickable-title js-open-office">
               <span>Наш офис</span>
-              <span class="footer__button"></span>
+              <button></button>
             </div>
 
             <ul>
@@ -418,24 +422,27 @@
       </button>
 
       <form class="js-popup-form" action="#">
+        <div class="popup__result js-popup-result">
+          <p>Ваш вопрос успешно отправлен</p>
+        </div>
 
         <label class="visually-hidden" for="popup-input-name">Ваше имя </label>
-        <input type="text" id="popup-input-name" placeholder="Имя" class="popup__input popup__input--name js-name-input"
+        <input type="text" id="popup-input-name" placeholder="Имя" class="popup__input popup__input--name js-name-input-popup"
           required maxlength="100" minlength="1">
 
         <label class="visually-hidden" for="popup-input-tel">Ваше номер телефона</label>
         <input type="tel" id="popup-input-tel" placeholder="Телефон"
-          class="js-phone-input" required minlength="10">
+          class="js-phone-input-popup" required minlength="10">
 
         <label class="visually-hidden" for="popup-input-message">Ваше вопрос</label>
         <textarea rows="7" id="popup-input-message" placeholder="Ваш вопрос" minlength="1" maxlength="1000"
-          class="js-message-input" required></textarea>
+          class="js-message-input-popup" required></textarea>
 
         <button type="submit" class="js-submit-popup">Задать вопрос</button>
 
         <label for="popup-checkbox" class="check-label">
           Я согласен на обработку персональных данных
-          <input type="checkbox" checked id="popup-checkbox" class="check-label__checkbox" required tabindex="0">
+          <input type="checkbox" checked id="popup-checkbox" class="check-label__checkbox js-checkbox-input-popup" required tabindex="0">
           <span class="check-label__checkmark"></span>
         </label>
 

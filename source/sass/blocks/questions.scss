@@ -9,8 +9,8 @@
   min-height: 670px;
   background-color: $primary;
   color: $basic-white;
+  position: relative;
 }
-
 
 .questions__section h3 {
   font-size: 36px;
@@ -18,15 +18,28 @@
   font-weight: 400;
   margin: 0;
   margin-bottom: 10px;
-  font-family: "Roboto Condensed", "Courier New" , monospace;
+  font-family: "Roboto Condensed", "Courier New", monospace;
 }
-
 
 .questions__section p {
   font-size: 16px;
   line-height: 22px;
   margin: 0;
   margin-bottom: 53px;
+}
+
+.questions__result {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($dark-primary, 0.6);
+  color: $basic-white;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  display: none;
 }
 
 .questions form {
@@ -36,8 +49,9 @@
   row-gap: 40px;
 }
 
-  .questions__section input,
-  .questions__section textarea {
+.questions__section input,
+.questions__section textarea {
+  resize: none;
   color: $dark-primary;
   padding: 14px;
   padding-left: 16px;
@@ -73,7 +87,7 @@
 }
 
 .questions button {
-  font-family: "Roboto Condensed", "Courier New" , monospace;
+  font-family: "Roboto Condensed", "Courier New", monospace;
   border: 1px solid $basic-white;
   border-radius: 5px;
   background-color: transparent;
@@ -145,7 +159,7 @@
     right: -4%;
   }
 
-  .questions__section h3  {
+  .questions__section h3 {
     font-size: 30px;
     line-height: 140.62%;
   }
@@ -176,7 +190,7 @@
 }
 
 @media (max-width: $tablet) {
-  .questions__section h3  {
+  .questions__section h3 {
     font-size: 32px;
     line-height: 140.62%;
     margin-bottom: 17px;
@@ -240,7 +254,7 @@
     row-gap: 30px;
   }
 
-  .questions__section h3  {
+  .questions__section h3 {
     font-size: 28px;
     line-height: 140.62%;
     margin-bottom: 12px;

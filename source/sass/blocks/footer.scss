@@ -8,7 +8,7 @@
 }
 
 .footer__top .link-sd,
-.footer__button {
+.footer__clickable-title button {
   display: none;
 }
 
@@ -145,7 +145,7 @@
 
 @media (max-width: 1919px) {
   .footer .container {
-    grid-template-columns: max-content 1fr;
+    grid-template-columns: min-content 1fr;
     column-gap: 20px;
     padding-left: 26px;
     padding-right: 26px;
@@ -313,7 +313,7 @@
     margin-bottom: 0;
   }
 
-  .footer__button {
+  .footer__clickable-title button {
     position: relative;
     display: block;
     width: 16px;
@@ -323,14 +323,14 @@
     border: none;
   }
 
-  .footer__button::after,
-  .footer__button::before {
+  .footer__clickable-title button::after,
+  .footer__clickable-title button::before {
     content: "";
     position: absolute;
     background-color: $mask;
   }
 
-  .footer__button::after {
+  .footer__clickable-title button::after {
     top: 50%;
     transform: translateY(-50%);
     left: 0;
@@ -338,7 +338,7 @@
     height: 1px;
   }
 
-  .footer__button::before {
+  .footer__clickable-title button::before {
     left: 50%;
     top: 0;
     transform: translateX(-50%);
