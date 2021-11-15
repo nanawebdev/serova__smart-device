@@ -24,12 +24,6 @@
   }
 }
 
-.offer a {
-  display: block;
-  position: relative;
-  cursor: pointer;
-}
-
 .offer .container {
   max-width: 1164px;
   margin: 0 auto;
@@ -41,7 +35,7 @@
   font-size: 36px;
   line-height: 51px;
   font-weight: 400;
-  font-family: "Roboto Condensed", "Courier New" , monospace;
+  font-family: "Roboto Condensed", "Courier New", monospace;
   margin: 0;
   margin-bottom: 50px;
 }
@@ -77,6 +71,9 @@
 }
 
 .offer a {
+  display: block;
+  position: relative;
+  cursor: pointer;
   color: $basic-white;
   text-decoration: none;
 
@@ -90,7 +87,7 @@
 }
 
 .offer p {
-  font-family: "Roboto Condensed", "Courier New" , monospace;
+  font-family: "Roboto Condensed", "Courier New", monospace;
   font-size: 20px;
   line-height: 30px;
   font-weight: 400;

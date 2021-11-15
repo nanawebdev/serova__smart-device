@@ -9,11 +9,10 @@
 .promo__info h1 {
   color: $basic-white;
   font-weight: 700;
-  font-size: 40px;
   line-height: 94px;
   letter-spacing: 0.07em;
   text-transform: uppercase;
-  font-family: "Roboto Condensed", "Courier New" , monospace;
+  font-family: "Roboto Condensed", "Courier New", monospace;
   margin-top: 230px;
   white-space: normal;
   word-wrap: break-word;
@@ -45,7 +44,7 @@
 }
 
 .promo a {
-  font-family: "Roboto Condensed", "Courier New" , monospace;
+  font-family: "Roboto Condensed", "Courier New", monospace;
   background-color: $primary;
   color: $basic-white;
   font-weight: bold;
@@ -112,6 +111,8 @@
     width: 330px;
     height: 466px;
     background-image: url("./../img/promo-img-t.png");
+    top: -72px;
+    right: -2px;
   }
 
   .promo {
@@ -120,11 +121,6 @@
     padding: 0;
     padding-bottom: 8px;
     overflow: hidden;
-  }
-
-  .promo__bg-img {
-    top: -72px;
-    right: -2px;
   }
 
   .promo__info {
@@ -153,7 +149,6 @@
   }
 
   .promo a {
-    margin-left: 0;
     margin-left: 47px;
     padding: 18px 31px;
   }
@@ -164,6 +159,8 @@
     width: 294px;
     height: 437px;
     background-image: url("./../img/promo-img-m.png");
+    right: 0;
+    top: -55px;
   }
 
   .promo__info h1 {
@@ -172,11 +169,6 @@
     letter-spacing: 0.07em;
     margin-top: 231px;
     width: 247px;
-  }
-
-  .promo__bg-img {
-    right: 0;
-    top: -55px;
   }
 
   .promo__info {
