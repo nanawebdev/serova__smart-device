@@ -144,16 +144,17 @@
 
                   <picture>
                     <!-- 290x256  без ретины; 580x512 c ретиной  -->
-                    <source media="(max-width: 767px)" srcset="./img/printed-m.webp 1x, ./img/printed-m@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 767px)" srcset="./img/printed-m.webp 1x, ./img/printed-m@2x.webp 2x">
                     <!-- 720x256 без ретины; 1440x512 c ретиной  -->
-                    <source media="(max-width: 1023px)" srcset="./img/printed-t.webp 1x, ./img/printed-t@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1023px)" srcset="./img/printed-t.webp 1x, ./img/printed-t@2x.webp 2x">
                     <!-- 370x620 без ретины; 740х1240 c ретиной -->
-                    <source media="(min-width: 1024px)" srcset="./img/printed.webp 1x, ./img/printed@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 1024px)" srcset="./img/printed.webp 1x, ./img/printed@2x.webp 2x">
 
                     <!-- 290x256  без ретины; 580x512 c ретиной  -->
                     <source media="(max-width: 767px)" srcset="./img/printed-m.jpg 1x, ./img/printed-m@2x.jpg 2x">
                     <!-- 720x256 без ретины; 1440x512 c ретиной  -->
                     <source media="(max-width: 1023px)" srcset="./img/printed-t.jpg 1x, ./img/printed-t@2x.jpg 2x">
+
                     <!-- 370x620 без ретины; 740х1240 c ретиной -->
                     <img class="offer__img" src="./img/printed.jpg" srcset="./img/printed@2x.jpg 2x" alt="Печать плат" width="370" height="620" loading="lazy">
                   </picture>
@@ -171,11 +172,11 @@
 
                   <picture>
                     <!-- 290x256  без ретины; 580x512 c ретиной  -->
-                    <source media="(max-width: 767px)" srcset="./img/mounting-m.webp 1x, ./img/mounting-m@2x.webp 2x">
+                    <source media="(max-width: 767px)" type="image/webp" srcset="./img/mounting-m.webp 1x, ./img/mounting-m@2x.webp 2x">
                     <!-- 720x256 без ретины; 1440x512 c ретиной  -->
-                    <source media="(max-width: 1023px)" srcset="./img/mounting-t.webp 1x, ./img/mounting-t@2x.webp 2x">
+                    <source media="(max-width: 1023px)" type="image/webp" srcset="./img/mounting-t.webp 1x, ./img/mounting-t@2x.webp 2x">
                     <!-- 370x620 без ретины; 740х1240 c ретиной -->
-                    <source media="(min-width: 1024px)" srcset="./img/mounting.webp 1x, ./img/mounting@2x.webp 2x">
+                    <source media="(min-width: 1024px)" type="image/webp" srcset="./img/mounting.webp 1x, ./img/mounting@2x.webp 2x">
 
                     <!-- 290x256  без ретины; 580x512 c ретиной  -->
                     <source media="(max-width: 767px)" srcset="./img/mounting-m.jpg 1x, ./img/mounting-m@2x.jpg 2x">
@@ -198,11 +199,11 @@
                   </div>
                   <picture>
                     <!-- 290x256  без ретины; 580x512 c ретиной  -->
-                    <source media="(max-width: 767px)" srcset="./img/light-m.webp 1x, ./img/light-m@2x.webp 2x">
+                    <source media="(max-width: 767px)" type="image/webp" srcset="./img/light-m.webp 1x, ./img/light-m@2x.webp 2x">
                     <!-- 720x256 без ретины; 1440x512 c ретиной  -->
-                    <source media="(max-width: 1023px)" srcset="./img/light-t.webp 1x, ./img/light-t@2x.webp 2x">
+                    <source media="(max-width: 1023px)" type="image/webp" srcset="./img/light-t.webp 1x, ./img/light-t@2x.webp 2x">
                     <!-- 370x620 без ретины; 740х1240 c ретиной -->
-                    <source media="(min-width: 1024px)" srcset="./img/light.webp 1x, ./img/light@2x.webp 2x">
+                    <source media="(min-width: 1024px)" type="image/webp" srcset="./img/light.webp 1x, ./img/light@2x.webp 2x">
 
                     <!-- 290x256  без ретины; 580x512 c ретиной  -->
                     <source media="(max-width: 767px)" srcset="./img/light-m.jpg 1x, ./img/light-m@2x.jpg 2x">
@@ -414,7 +415,7 @@
       <h3>Закажите звонок</h3>
       <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
 
-      <button type="button" class="js-close-popup">
+      <button type="button" class="js-close-popup" tabindex="6">
         <svg class="svg svg-cross" width="16" height="16">
           <use xlink:href="./img/sprite.svg#cross"></use>
         </svg>
@@ -426,19 +427,19 @@
         </div>
 
         <label class="visually-hidden" for="popup-input-name">Ваше имя </label>
-        <input type="text" id="popup-input-name" placeholder="Имя" class="popup__input popup__input--name js-name-input-popup" required="" maxlength="100" minlength="1">
+        <input type="text" id="popup-input-name" placeholder="Имя" class="popup__input popup__input--name js-name-input-popup" required="" maxlength="100" minlength="1" tabindex="1">
 
         <label class="visually-hidden" for="popup-input-tel">Ваше номер телефона</label>
-        <input type="tel" id="popup-input-tel" placeholder="Телефон" class="js-phone-input-popup" required="" minlength="10">
+        <input type="tel" id="popup-input-tel" placeholder="Телефон" class="js-phone-input-popup" required="" minlength="10" tabindex="2">
 
         <label class="visually-hidden" for="popup-input-message">Ваше вопрос</label>
-        <textarea rows="7" id="popup-input-message" placeholder="Ваш вопрос" minlength="1" maxlength="1000" class="js-message-input-popup" required=""></textarea>
+        <textarea rows="7" id="popup-input-message" placeholder="Ваш вопрос" minlength="1" maxlength="1000" class="js-message-input-popup" required="" tabindex="3"></textarea>
 
-        <button type="submit" class="js-submit-popup">Задать вопрос</button>
+        <button type="submit" class="js-submit-popup" tabindex="4">Задать вопрос</button>
 
-        <label for="popup-checkbox" class="check-label">
+        <label for="popup-checkbox" class="check-label" tabindex="5">
           Я согласен на обработку персональных данных
-          <input type="checkbox" checked="" id="popup-checkbox" class="check-label__checkbox js-checkbox-input-popup" required="" tabindex="0">
+          <input type="checkbox" checked="" id="popup-checkbox" class="check-label__checkbox js-checkbox-input-popup" required="">
           <span class="check-label__checkmark"></span>
         </label>
 

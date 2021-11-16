@@ -2,9 +2,8 @@
   padding-top: 65px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 400px 1fr max-content;
+  grid-template-columns: 420px 1fr max-content;
   padding-bottom: 43px;
-  column-gap: 20px;
 }
 
 .footer__top .link-sd,
@@ -21,16 +20,22 @@
 }
 
 .footer__top ul {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: max-content max-content max-content;
   padding: 0;
   margin: 0;
   margin-top: 49px;
-  column-gap: 15px;
+}
+
+.footer__top li {
+  margin-right: 15px;
+}
+
+.footer__top li:nth-child(3n) {
+  margin-right: 0;
 }
 
 .svg-social {
-
   fill: $middle-grey;
 
   &:hover {
@@ -41,6 +46,7 @@
 .footer__top {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
+  padding-right: 20px;
 }
 
 .footer__middle {
@@ -50,9 +56,16 @@
 }
 
 .footer__lists {
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 73px;
+  display: grid;
+  grid-template-columns: max-content max-content;
+}
+
+.footer__lists ul {
+  margin-right: 73px;
+}
+
+.footer__lists ul:nth-child(2n) {
+  margin-right: 8px;
 }
 
 .footer__middle ul {
@@ -147,7 +160,6 @@
 @media (max-width: 1919px) {
   .footer .container {
     grid-template-columns: min-content 1fr;
-    column-gap: 20px;
     padding-left: 26px;
     padding-right: 26px;
   }
@@ -156,9 +168,9 @@
     margin-left: 0;
   }
 
-  .footer__middle,
-  .footer__lists {
-    column-gap: 12px;
+  .footer__lists ul,
+  .footer__pages {
+    margin-right: 12px;
   }
 
   .footer__middle {
@@ -168,7 +180,10 @@
   .footer__bottom.container {
     display: grid;
     grid-template-columns: 1fr max-content;
-    column-gap: 20px;
+  }
+
+  .footer__special-list {
+    margin-right: 20px;
   }
 
   .footer__special-link.footer__special-link--rights,
@@ -195,8 +210,12 @@
     align-items: center;
     grid-column: 1 / -1;
     grid-row: 1 / 2;
-    column-gap: 71px;
     border-bottom: 1px solid rgba($divider, 0.2);
+  }
+
+  .footer__top .svg-logo--dark,
+  .footer__top .link-sd {
+    margin-right: 71px;
   }
 
   .footer__top .link-sd {
@@ -371,5 +390,10 @@
   .no-js .footer__office ul,
   .no-js .footer__lists {
     display: block;
+  }
+
+  .footer__top .svg-logo--dark,
+  .footer__top .link-sd {
+    margin-right: 0;
   }
 }

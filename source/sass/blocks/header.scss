@@ -5,7 +5,6 @@
   border-radius: 5px;
   background-color: transparent;
   text-transform: uppercase;
-  margin-left: 48px;
   font-family: "Roboto Condensed", "Courier New", monospace;
   white-space: nowrap;
   height: 45px;
@@ -17,6 +16,7 @@
   letter-spacing: 0.05em;
   cursor: pointer;
   transition: background-color 0.2s;
+  margin-left: 37px;
 
   &:hover {
     background-color: rgba($basic-white, 0.3);
@@ -54,13 +54,24 @@
 .header__right ul {
   display: grid;
   list-style: none;
-  grid-template-columns: max-content max-content;
+  grid-template-columns: 1fr 1fr;
   row-gap: 8px;
   margin: 0;
   padding: 0;
   padding-top: 13px;
-  column-gap: 88px;
   padding-left: 8px;
+}
+
+.header__right li {
+  margin-right: 88px;
+}
+
+.header__right li:nth-child(2n) {
+  margin-right: 8px;
+}
+
+.header__right svg {
+  flex-shrink: 0;
 }
 
 .header__right span {
@@ -118,9 +129,15 @@
 
   .header__right ul {
     padding-top: 9px;
-    column-gap: 33px;
-    display: flex;
-    flex-wrap: wrap;
+    grid-template-columns: min-content min-content;
+  }
+
+  .header__right li {
+    margin-right: 33px;
+  }
+
+  .header__right li:nth-child(2n) {
+    margin-right: 0;
   }
 
   .header .container {
@@ -151,8 +168,15 @@
   }
 
   .header__right ul {
-    column-gap: 21px;
     padding-top: 3px;
+  }
+
+  .header__right li {
+    margin-right: 21px;
+  }
+
+  .header__right li:nth-child(2n) {
+    margin-right: 0;
   }
 
   .svg--phone {

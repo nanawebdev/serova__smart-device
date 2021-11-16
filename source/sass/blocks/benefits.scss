@@ -4,9 +4,7 @@
   margin: 0;
   padding-top: 109px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 30px;
-  row-gap: 30px;
+  grid-template-columns: min-content min-content;
 }
 
 .benefits h3 {
@@ -35,6 +33,9 @@
   color: $dark-grey;
   box-sizing: border-box;
   min-height: 299px;
+  margin-right: 30px;
+  width: 570px;
+  margin-bottom: 30px;
 
   &:hover {
     background-color: $primary;
@@ -48,6 +49,10 @@
   &:hover h3 {
     color: $basic-white;
   }
+}
+
+.benefits__item:nth-child(2n) {
+  margin-right: 0;
 }
 
 .benefits.container {
@@ -64,6 +69,11 @@
     padding-top: 54px;
     padding-left: 8px;
     padding-right: 8px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .benefits__item {
+    width: auto;
   }
 }
 
@@ -71,14 +81,21 @@
   .benefits {
     padding-left: 25px;
     padding-right: 25px;
+    grid-template-columns: 1fr 1fr;
   }
 
   .benefits__item {
     padding-top: 24px;
     padding-left: 27px;
-    padding-right: 18px;
+    padding-right: 20px;
     padding-bottom: 19px;
     min-height: 232px;
+    margin-right: 30px;
+    min-width: 345px;
+  }
+
+  .benefits__item:nth-child(2n) {
+    margin-right: 0;
   }
 
   .svg--watch {
@@ -106,6 +123,7 @@
     margin-bottom: 0;
     font-size: 24px;
     line-height: 34px;
+    font-weight: 400;
   }
 
   .benefits p {
@@ -136,7 +154,6 @@
     padding-right: 14px;
     display: flex;
     flex-direction: column;
-    row-gap: 20px;
   }
 
   .benefits__item {
@@ -145,6 +162,9 @@
     min-height: 232px;
     font-size: 20px;
     line-height: 140.62%;
+    margin-bottom: 20px;
+    min-width: auto;
+    width: 100%;
   }
 
   .benefits h3 {
@@ -164,7 +184,6 @@
   .benefits__item--hired p {
     margin-top: 10px;
   }
-
 
   .benefits__item--detective p,
   .benefits__item--price p {
